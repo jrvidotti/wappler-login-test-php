@@ -1,0 +1,48 @@
+{
+  "projectName": "teste-login",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "designFramework": "bootstrap5",
+  "frameworks": [
+    {
+      "name": "fontawesome_5",
+      "type": "cdn"
+    },
+    {
+      "name": "bootstrap5",
+      "type": "local"
+    },
+    {
+      "name": "appConnect",
+      "type": "local"
+    }
+  ],
+  "hostingType": "docker",
+  "projectServerModel": "PHP",
+  "targets": [
+    {
+      "name": "Development",
+      "remoteURL": "http://localhost:8100",
+      "webServerPort": 8100,
+      "webServerLang": "PHP",
+      "targetType": "docker",
+      "webServer": "apache",
+      "PHPVersion": "7.3.x",
+      "webLoggingMaxFiles": "5",
+      "webLoggingMaxFileSize": "10m",
+      "databaseLoggingMaxFiles": "5",
+      "databaseLoggingMaxFileSize": "10m",
+      "databaseType": "postgres",
+      "databasePort": 9906,
+      "postgresVersion": "11.1.x",
+      "postgres_rootName": "db_user",
+      "postgres_rootPassword": "4PHwqzV0",
+      "postgres_databaseName": "teste-login"
+    }
+  ],
+  "activeTarget": "Development",
+  "useRouting": true,
+  "addBase": true,
+  "routingHandler": "apache",
+  "projectType": "web"
+}

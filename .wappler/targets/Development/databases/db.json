@@ -1,0 +1,111 @@
+{
+  "direct": true,
+  "type": "postgres",
+  "connection": {
+    "host": "localhost",
+    "port": 9906,
+    "user": "db_user",
+    "password": "4PHwqzV0",
+    "database": "teste-login"
+  },
+  "schema": {
+    "tables": {
+      "cars": {
+        "db": {
+          "schema": "public"
+        }
+      },
+      "countries": {
+        "db": {
+          "schema": "public"
+        }
+      },
+      "images": {
+        "db": {
+          "schema": "public"
+        }
+      },
+      "users": {
+        "db": {
+          "schema": "public"
+        },
+        "columns": {
+          "id": {
+            "db": {
+              "type": "increments",
+              "default": "",
+              "primary": true,
+              "nullable": false
+            }
+          },
+          "first_name": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 8,
+              "primary": false,
+              "nullable": true
+            }
+          },
+          "last_name": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 10,
+              "primary": false,
+              "nullable": true
+            }
+          },
+          "gender": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 6,
+              "primary": false,
+              "nullable": true
+            }
+          },
+          "email": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 25,
+              "primary": false,
+              "nullable": true
+            }
+          },
+          "company": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 29,
+              "primary": false,
+              "nullable": true
+            }
+          },
+          "avatar": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 25,
+              "primary": false,
+              "nullable": true
+            }
+          },
+          "password": {
+            "db": {
+              "type": "string",
+              "maxLength": 255,
+              "primary": false,
+              "nullable": true
+            }
+          }
+        }
+      }
+    },
+    "views": {},
+    "schemas": [
+      "public"
+    ]
+  }
+}
